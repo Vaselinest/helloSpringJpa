@@ -57,4 +57,10 @@
     <a class="btn" th:href="@{/products}">← 상품 목록으로 돌아가기</a>
 
 </body>
+
+<hr/>
+<footer>
+    <p th:text="${'실습 수행 일시: ' + #temporals.format(#temporals.createNow(), 'yyyy년 MM월 dd일 (E) a hh:mm:ss')}"></p>
+    <p>학번: 2171130 | 성명: 최주성</p>
+</footer>
 </html>
